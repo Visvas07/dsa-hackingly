@@ -60,3 +60,53 @@ Approach:
    2. Check if arr[j]!=0. This is because after the swap operation, the value will change. If true, increment j.
 4. Print the array in order to see the output.
 
+Saturday problems (21/07/2024)
+
+Problem 1: Reverse a Number
+
+Write a program to reverse a number.
+
+Example:
+Input: 1998
+Output : 8991
+
+Approach:
+1. Declare two variables,rem for remainder and rev for storing the reverse number.
+2. Continue the following steps until N!=0
+   1. Get the remainder of the number when divided by 10.
+   2. Get the reverse of the digit by multiplying rev by 10 and adding rem to it.
+   3. Divide n by 10 to go to the next digit.
+3. Once done, return the reverse number.
+
+Problem 2: Merge 2 sorted linked list
+
+Example: 
+Input : 3->4->8->12
+1->6->15->19
+Output: 1->3->4->6->8->12->15->19
+
+Approach:
+1. Declare two nodes . Head for storing the list and tail for traversing both lists.
+2. Check if the data of first node (let us say A) is less than data of the second node (let us say B).
+   1. If true, assign A to head and traverse A to next node in A list.
+   2. If false, assign B node to head and traverse B to next node in B List.
+3. Assign tail to head.
+4. Follow these steps until both list have been traversed
+   1. If A.data < B.Data then assign tail.next to A and A to A.next (moving to next node)
+   2. Else assign tail.next to B and B to B.next (moving to next node)
+   3. Assign tail = tail.next to go to the next node.
+5. If A is null, then assign tail.next to B.
+6. If B is null, then assign tail.next to A.
+7. Return head to get the resultant list.
+
+Problem 3: Count the number of vowels
+Example Input: Hackingly
+Count :2
+
+Approach:
+1. Declare the variable count as 0 to count the no of vowels
+2. Create a character array to extract the characters from the string.
+3. Traverse till the end of loop:
+   1. If the character matches any fo the vowels (AaEeIiOoUu), then increment count.
+4. Return count.
+
