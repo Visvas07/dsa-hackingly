@@ -110,3 +110,52 @@ Approach:
    1. If the character matches any fo the vowels (AaEeIiOoUu), then increment count.
 4. Return count.
 
+
+Week Two:
+
+Problem :
+Write a problem to find the min and max elements of the array.
+Input: array =  [3,1,4,6,2,7]
+Output: 1,7
+
+Approach:
+
+1. Initialize two variables min and max to the first element of the array.
+2. Iterate through the array to find the min element first by using Math.min method.
+3. Next, iterate through the array to find the max element by using the Math.max method.
+4. Print the max and min elements.
+
+Problem 2:
+Write a program to find the most frequent character in an array. if there are multiple element maximum number of times, print any of them
+For example -:
+Input: array = [1,3,2,1,4,1]
+output: 1 appears three times in array.
+
+Approach:
+1. Create a hashmap with both key and value as Integer. 
+2. Initialize maxCount variable as 0 and element with most frequency as -1.
+3. Iterate through the array.
+   1. Check if the hashmap contains the element. If yes, then create the frequency variable and assign the frequency value of the element to it.
+   2. Increment the frequency and update the same in the hashmap.
+   3. If the hashmap doesn't contain , then update the hashmap with frequency as value and element as key.
+4. After that , iterate through the entryset of hashmap
+   1. Check if max count is less than the frequency value of the element. If yes, then update the max count with the frequency of the element and the elementMaxFreq with the key.
+   2. Check with all elements.
+5. Return the element.
+
+
+Problem 3:
+write a program that where you have to find the sum of Even odd
+For example -:      
+Input: array = [1,2,3,4,5,6,7]
+Output : array = 12 16
+
+Approach:
+1. Initialize two variables sumEven to store sum of even numbers and sumOdd to store sum of odd numbers.
+2. Iterate through the array.
+   1. Check if element is divisible by 2, if yes, add to sumEven.
+   2. Else, add to sumOdd.
+3. Print both sumEven and SumOdd.
+
+
+
