@@ -157,5 +157,45 @@ Approach:
    2. Else, add to sumOdd.
 3. Print both sumEven and SumOdd.
 
+Saturday
 
+Problem 1: Write a program to find out whether the given year is a Leap year or not
+For example -:
+Input: 1990
+Output: Non Leap Year
+Input: 2024
+Output: Leap Year
+
+Approach:
+1. Check whether the year is divisible by 400.
+2. If yes, then check whether the year is divisible by 4.
+3. If yes, then check whether the year is not divisible by 100.
+4. If all conditions are true then it is a leap year. If not, then it is not a leap year.
+
+
+Problem 2:Write a program to check whether the given number is a Perfect Number or not.
+For example -:
+Input: 1
+Output: YES
+Input: 96345
+Output: NO
+
+Approach:
+1. Initialize sum as 0.
+2. Iterate from 1 to num/2 . This is done because all the divisors of a number will come before num/2.
+   1. Check if i divides num to give 0 as reminder. If yes, then add i to sum.
+3. Check if sum is equal to num. If yes, return true. Else, return false.
+
+
+Problem 3: Write a program check whether the Package is Dream Package or not
+Note :-- if the salary is maximum than 5 lakh than return 'Dream' otherwise return 'NotDream'
+For example -:
+Input: 100000
+Output: NOTDREAM
+
+Approach:
+
+We can use a conditional statement to print the result like:
+
+   if(salary > 500000) ? "DREAM" : "NOTDREAM".
 
